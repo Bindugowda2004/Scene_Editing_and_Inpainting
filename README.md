@@ -42,11 +42,10 @@ This allows applications in:
 
 ```mermaid
 graph TD
-A[Scene Image] --> B[Scene Classification]
+A[Input Image] --> B[Scene Classification]
 B --> C[Semantic/Panoptic Segmentation]
 C --> D[Generate Placeable Region Mask]
 D --> E[Depth Estimation]
 E --> F[Optional Object Removal]
 F --> G[User Selects Object Placement]
 G --> H[Object Segmentation & Scaling]
-H --> I[Object Compositing with Inpainting]
